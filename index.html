@@ -3,38 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>TecnoServicios - Soluciones Tecnológicas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="f8c24c05-2eed-48b6-9e82-9fe59955a702.jpg" alt="Logo">
-                <h1>Mi Sitio Web</h1>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:+123456789"><i class="fas fa-phone-alt"></i> +1 (234) 567-89</a>
+                <a href="mailto:info@tecnoservicios.com"><i class="fas fa-envelope"></i> info@tecnoservicios.com</a>
             </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
 
-            <div class="menu-toggle">☰</div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="https://via.placeholder.com/50x50/2563eb/ffffff?text=TS" alt="TecnoServicios Logo">
+                    <div class="logo-text">
+                        <h1>TecnoServicios</h1>
+                        <span>Soluciones tecnológicas integrales</span>
+                    </div>
+                </div>
 
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+                <div class="menu-toggle" id="menuToggle">☰</div>
+
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#" class="cta-button"><i class="fas fa-headset"></i> Soporte</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <script>
-        // Script para el menú hamburguesa en móviles
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            const nav = document.getElementById('main-nav');
-            nav.classList.toggle('active');
-        });
-    </script>
-</body>
-</html>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Soluciones Tecnológicas para tu Negocio</h2>
+            <p>Ofrecemos servicios profesionales de TI, desarrollo de software, redes y seguridad informática para ayudarte a crecer en la era digital.</p>
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn btn-primary"><i class="fas fa-laptop-code"></i> Nuestros Servicios</a>
+                <a href="#contacto" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Contactar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="servicios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Ofrecemos soluciones tecnológicas completas para empresas de todos los tamaños.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Desarrollo de Software">
+                    </div>
+                    <div class="service-content">
+                        <h3>Desarrollo de Software</h3>
+                        <p>Soluciones personalizadas para automatizar procesos y mejorar la productividad de tu empresa.</p>
+                        <div class="service-meta">
+                            <span><i class="far fa-clock"></i> 2-6 semanas</span>
+                            <span><i class="fas fa-code-branch"></i> Web/Móvil</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Redes y Seguridad">
+                    </div>
+                    <div class="service-content">
+                        <h3>Redes y Seguridad</h3>
+                        <p>Implementación y mantenimiento de infraestructura de red con los más altos estándares de seguridad.</p>
+                        <div class="service-meta">
+                            <span><i class="far fa-clock"></i> 1-3 días</span>
+                            <span><i class="fas fa-shield-alt"></i> Protección 24/7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Soporte Técnico">
+                    </div>
+                    <div class="service-content">
+                        <h3>Soporte Técnico</h3>
+                        <p>Asistencia remota y presencial para resolver cualquier problema técnico en tu organización.</p>
+                        <div class="service-meta">
+                            <span><i class="far fa-clock"></i> 24/7</span>
+                            <span><i class="fas fa-headset"></i> Respuesta inmediata</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section bg-light" id="productos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Productos Destacados</h2>
+                <p>Equipos y dispositivos de última generación para tu negocio.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-badge">Nuevo</span>
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Laptop Profesional">
+                    </div>
+                    <div class="product-content">
+                        <h3>Laptop Profesional XT-5000</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$1,299.99</span>
+                            <span class="old-price">$1,499.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Añadir</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Audífonos Premium">
+                    </div>
+                    <div class="product-content">
+                        <h3>Audífonos Premium SoundX</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(42)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$199.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Añadir</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <span class="product-badge">Oferta</span>
+                        <img src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Monitor 4K">
+                    </div>
+                    <div class="product-content">
+                        <h3>Monitor UltraHD 32"</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(15)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$349.99</span>
+                            <span class="old-price">$399.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Añadir</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Cámara Profesional">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cámara Profesional 4K</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(37)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$599.99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Añadir</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="nosotros">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre Nosotros</h2>
+                    <p>En TecnoServicios llevamos más de 10 años proporcionando soluciones tecnológicas innovadoras a empresas de todos los tamaños. Nuestro equipo de expertos está comprometido con la excelencia y la satisfacción del cliente.</p>
+                    <p>Nos especializamos en entender las necesidades específicas de cada negocio para ofrecer soluciones personalizadas que generen un impacto real en la productividad y eficiencia.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4>Experiencia comprobada</h4>
+                                <p>Más de 200 proyectos exitosos implementados</p>
+                            </div>
+                        </div>
+                       
